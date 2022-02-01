@@ -1,0 +1,14 @@
+{
+  "name": "asc_build",
+  "version": "1.0.0",
+  "description": "Website build for Alan Sewell Consulting",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Ken Hudnell",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

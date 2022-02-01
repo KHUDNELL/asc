@@ -1,0 +1,320 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+p {
+  margin-bottom: 2rem; }
+
+.navbar {
+  padding-bottom: 0; }
+
+.navbar > .container-fluid {
+  align-items: flex-end; }
+
+.navbar-nav {
+  justify-content: space-between;
+  width: 100%; }
+
+.navbar-collapse {
+  flex-grow: 0;
+  text-align: center;
+  /*width: 40%;*/
+  max-width: 700px;
+  /* padding-right: 4rem;*/ }
+
+.navbar-brand img {
+  width: 100%;
+  max-width: 34.5rem;
+  min-width: 20rem;
+  padding: 10px 30px; }
+
+a.nav-link {
+  font-size: 2rem;
+  padding: 1rem 3rem !important;
+  color: #707070; }
+  a.nav-link.link-active {
+    background-color: #ED1C24 !important;
+    color: white !important; }
+
+a.nav-link:hover {
+  background-color: #a5a5a5;
+  color: white !important; }
+
+.navbar-toggler {
+  font-size: 2.2rem; }
+
+.site-btn--interior {
+  text-decoration: none;
+  backface-visibility: hidden;
+  max-width: 45rem;
+  /*height: 6.5rem;*/
+  background-color: #ED1C24;
+  border-radius: .5rem;
+  border: 3px solid white;
+  color: white;
+  font-size: 2.8rem;
+  padding: 1rem 3rem;
+  margin-bottom: 3rem;
+  display: block;
+  /*
+    align-items: center;
+    justify-content: center;*/
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transform: scale(1);
+  transition: all .4s; }
+  .site-btn--interior:hover {
+    color: white;
+    background-color: #9e060b;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    backface-visibility: hidden; }
+
+.site-btn {
+  text-decoration: none;
+  backface-visibility: hidden;
+  width: 48%;
+  max-width: 35rem;
+  /*height: 6.5rem;*/
+  background-color: #ED1C24;
+  border-radius: .5rem;
+  border: 3px solid white;
+  color: white;
+  font-size: 2.8rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  /*
+    align-items: center;
+    justify-content: center;*/
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transform: scale(1);
+  transition: all .4s; }
+  .site-btn:hover {
+    color: white;
+    background-color: #9e060b;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    backface-visibility: hidden; }
+
+.masthead {
+  min-height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(20, 0, 0, 0.2)), url("../images/stock-photo-repairing-of-roof-by-cutting-felt-or-bitumen-shingles-during-waterproofing-works-688917724.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .masthead__overlay {
+    position: absolute;
+    left: 4rem;
+    bottom: 5rem;
+    width: 50%; }
+    .masthead__overlay__btncontainer {
+      display: flex;
+      justify-content: space-between;
+      max-width: 75rem; }
+  .masthead__overlay h1 {
+    color: white;
+    font-size: 5.5rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 3px #000000;
+    line-height: 1.2; }
+
+.masthead-interior {
+  height: 30rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(20, 0, 0, 0.2)), url("../images/interior-bannerstock-photo-repairing-of-roof-by-cutting-felt-or-bitumen-shingles-during-waterproofing-works-688917724.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .masthead-interior__overlay {
+    position: absolute;
+    left: 4rem;
+    bottom: 3rem;
+    width: 50%; }
+  .masthead-interior__overlay h1 {
+    color: white;
+    margin: 0;
+    font-size: 5.5rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 3px #000000;
+    line-height: 1.2; }
+
+.home-about {
+  display: flex;
+  padding: 8rem 2rem 9rem; }
+  .home-about__content {
+    flex-basis: 60%;
+    padding: 0 2rem; }
+  .home-about__content h3 {
+    color: #ED1C24;
+    font-size: 3.2rem;
+    font-weight: 600; }
+  .home-about__content h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #414141; }
+  .home-about__content p {
+    font-size: 2.5rem;
+    color: #707070; }
+  .home-about__contact {
+    padding: 0 2rem;
+    flex-basis: 40%; }
+    .home-about__contact--title {
+      color: #ED1C24;
+      margin-bottom: 0;
+      font-size: 3rem;
+      font-weight: 600; }
+    .home-about__contact--content {
+      color: #414141;
+      font-size: 3rem;
+      font-weight: 600; }
+
+.workmanship {
+  min-height: 40vh;
+  background-color: red;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 0, 0, 0.3)), url("../images/stock-photo-house-garret-closeup-blur-sky-background-1273889977.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .workmanship__container {
+    text-align: center; }
+    .workmanship__container h1 {
+      font-size: 5.5rem;
+      font-weight: 700;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px #000000; }
+    .workmanship__container h3 {
+      color: #ED1C24;
+      font-size: 3.2rem;
+      font-weight: 600;
+      background-color: rgba(255, 255, 255, 0.7);
+      text-shadow: 0 0 3px white;
+      padding: 1rem 4rem; }
+    .workmanship__container .site-btn {
+      width: unset;
+      margin: auto; }
+
+.clearfix {
+  clear: both; }
+
+.interior-main__content__testimonial {
+  margin-bottom: 6rem; }
+  .interior-main__content__testimonial--stars {
+    color: #FFE506;
+    font-size: 2.5rem;
+    margin-bottom: 2rem; }
+    .interior-main__content__testimonial--stars i {
+      padding: 0 .5rem; }
+
+.testimonials {
+  padding-bottom: 4rem; }
+  .testimonials .testimonial-container {
+    width: 75%;
+    margin: auto;
+    padding: 4rem; }
+    .testimonials .testimonial-container__stars {
+      color: #FFE506;
+      font-size: 2.5rem;
+      margin-bottom: 2rem; }
+      .testimonials .testimonial-container__stars i {
+        padding: 0 .5rem; }
+    .testimonials .testimonial-container p {
+      font-size: 2.5rem;
+      color: #707070; }
+
+.testimonial-container__sig {
+  font-size: 2.5rem;
+  color: #ED1C24;
+  font-style: italic;
+  font-weight: 600;
+  margin: 1rem;
+  float: right; }
+
+.swiper-button-next, .swiper-button-prev {
+  color: #5c5c5c !important;
+  opacity: .6; }
+
+.interior-main {
+  padding: 5rem 0 6rem;
+  display: flex; }
+  .interior-main__contact {
+    padding: 0 4rem;
+    font-size: 2.5rem;
+    color: #707070; }
+    .interior-main__contact--flex {
+      display: flex;
+      margin-top: 4rem; }
+    .interior-main__contact--phone {
+      width: 35%; }
+  .interior-main__content {
+    flex-basis: 66%;
+    padding: 0 4rem;
+    font-size: 2.5rem;
+    color: #707070; }
+    .interior-main__content--paragraph {
+      margin-bottom: 6rem; }
+  .interior-main__images {
+    flex-basis: 33%;
+    padding: 0 2rem; }
+    .interior-main__images--upper {
+      margin-bottom: 5rem; }
+      .interior-main__images--upper img {
+        width: 100%; }
+    .interior-main__images--lower img {
+      width: 100%; }
+
+footer {
+  background-color: #3E3E3E;
+  padding-bottom: 3rem; }
+  footer .footer__contact {
+    color: white;
+    font-size: 2rem;
+    padding: 4rem; }
+    footer .footer__contact--title {
+      font-size: 2.2rem;
+      font-weight: 600; }
+  footer .footer__copyright {
+    color: white;
+    text-align: center;
+    font-size: 2rem; }
+    footer .footer__copyright span {
+      font-size: 1.6rem; }
+
+/* Queries */
+/* tablet landscape */
+@media screen and (max-width: 1280px) {
+  a.nav-link {
+    padding: 1rem 2rem !important;
+    font-size: 1.8rem; } }
+
+/* tablet portrait */
+@media screen and (max-width: 998px) {
+  a.nav-link {
+    font-size: 1.6rem;
+    padding: 1rem !important; }
+  .navbar-brand img {
+    max-width: 250px; } }
+
+/* mobile menu breakpoint */
+@media screen and (max-width: 767px) {
+  .navbar > .container-fluid {
+    align-items: center; } }
