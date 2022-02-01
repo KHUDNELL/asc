@@ -13,6 +13,9 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif; }
 
+.swiper {
+  width: 95%; }
+
 p {
   margin-bottom: 2rem; }
 
@@ -109,12 +112,23 @@ a.nav-link:hover {
     backface-visibility: hidden; }
 
 .masthead {
-  min-height: 60vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(20, 0, 0, 0.2)), url("../images/stock-photo-repairing-of-roof-by-cutting-felt-or-bitumen-shingles-during-waterproofing-works-688917724.png");
+  min-height: 71vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(20, 0, 0, 0.2));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative; }
+  .masthead-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../images/bg-stock-photo-repairing-of-roof-by-cutting-felt-or-bitumen-shingles-during-waterproofing-works-688917724.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
   .masthead__overlay {
     position: absolute;
     left: 4rem;
@@ -132,7 +146,7 @@ a.nav-link:hover {
     line-height: 1.2; }
 
 .masthead-interior {
-  height: 30rem;
+  height: 42rem;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(20, 0, 0, 0.2)), url("../images/interior-bannerstock-photo-repairing-of-roof-by-cutting-felt-or-bitumen-shingles-during-waterproofing-works-688917724.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,7 +167,8 @@ a.nav-link:hover {
 
 .home-about {
   display: flex;
-  padding: 8rem 2rem 9rem; }
+  padding: 8rem 2rem 9rem;
+  background-color: white; }
   .home-about__content {
     flex-basis: 60%;
     padding: 0 2rem; }
@@ -186,13 +201,24 @@ a.nav-link:hover {
 .workmanship {
   min-height: 40vh;
   background-color: red;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 0, 0, 0.3)), url("../images/stock-photo-house-garret-closeup-blur-sky-background-1273889977.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 0, 0, 0.3));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center; }
+  .workmanship-bg {
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: url("../images/bg-stock-photo-house-garret-closeup-blur-sky-background-1273889977.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
   .workmanship__container {
     text-align: center; }
     .workmanship__container h1 {
@@ -226,7 +252,8 @@ a.nav-link:hover {
       padding: 0 .5rem; }
 
 .testimonials {
-  padding-bottom: 4rem; }
+  padding-bottom: 4rem;
+  background-color: white; }
   .testimonials .testimonial-container {
     width: 75%;
     margin: auto;

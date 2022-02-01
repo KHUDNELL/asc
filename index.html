@@ -24,14 +24,11 @@
 
 
     <title>Sewell Consulting</title>
-    <style>.swiper {
-        width: 100%;
-        /*height: 300px;*/
-      }</style>
+    
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="images/Sewell_logo.png" alt="Sewell Consulting"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,6 +59,7 @@
     </header>
 
     <section class="masthead">
+      <div class="masthead-bg"></div>
 
         <div class="masthead__overlay">
             <h1>Your Roofing Advocate Before, During & After Damage</h1>
@@ -95,6 +93,7 @@
     </section>
 
     <section class="workmanship">
+      <div class="workmanship-bg"></div>
         <div class="workmanship__container">
         <h3>Roof Repairs | Insurance Claims | Warranties & Compensation</h3>
         <h1>Superior Workmanship</h1>
@@ -192,5 +191,36 @@
         // And if we need scrollbar
         
       });</script>
+
+
+
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+
+<script>
+  gsap.to('.masthead-bg', {
+      yPercent: 40,
+      scrollTrigger: {
+        trigger: '.masthead',
+        start: "top top", 
+        end: "bottom top",
+        scrub: true,
+       /* markers: true*/
+      }
+    });
+
+
+    gsap.to('.workmanship-bg', {
+      yPercent: 60,
+      scrollTrigger: {
+        trigger: '.workmanship',
+        start: "top bottom", 
+        end: "bottom top",
+        scrub: true,
+        markers: true
+      }
+    });
+</script>
+
 </body>
 </html>
