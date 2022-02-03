@@ -30,7 +30,7 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="images/Sewell_logo.png" alt="Sewell Consulting"></a>
+              <a class="navbar-brand" href="index.html"><img src="images/Sewell_logo.png" id="header-logo" alt="Sewell Consulting"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -59,8 +59,9 @@
     </header>
 
     <section class="masthead-interior">
+      <div class="masthead-interior-bg"></div>
         <div class="masthead-interior__overlay">
-            <h1>Our Mission</h1>
+            <h1 class="mast-heading">Our Mission</h1>
            
 
     </section>
@@ -85,14 +86,15 @@
 
         <div class="interior-main__images">
 
+            
             <div class="interior-main__images--upper">
-                <img src="images/int-image-placeholder-465x320.jpg" />
-
+                <img src="images/interior/stock-photo-professional-technician-roof-repair-standing-action-on-the-roof-top-hold-the-drive-screw-tool-in-1653879874.jpg" />
             </div>
+            
             <div class="interior-main__images--lower">
-                <img src="images/int-image-placeholder-465x320.jpg" />
-            </div>
+              <img src="images/interior/stock-photo-construction-worker-putting-the-asphalt-roofing-shingles-with-nail-gun-on-a-large-commercial-420546622.jpg" />
 
+          </div>
             
         </div>
 
@@ -193,5 +195,32 @@
         // And if we need scrollbar
         
       });</script>
+      <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("header-logo").style.width = "75%";
+        } else {
+          document.getElementById("header-logo").style.width = "100%";
+        }
+      } 
+      </script>
+      <script src="js/gsap.min.js"></script>
+      <script src="js/ScrollTrigger.min.js"></script>
+
+      <script>
+         gsap.from(".mast-heading", {
+      x: -200,
+      autoAlpha: 0,
+      duration: .8,
+      delay: .3,
+      scrollTrigger: {
+        trigger: '.masthead-interior'
+      }
+    }
+    );
+      </script>
 </body>
 </html>

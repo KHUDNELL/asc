@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- This site was designed and built from scratch without a pre-built template or theme by Ken Hudnell 2022 :) -->
+
 
 
     <link
@@ -30,7 +32,7 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="images/Sewell_logo.png" alt="Sewell Consulting"></a>
+              <a class="navbar-brand" href="#"><img src="images/Sewell_logo.png" id="header-logo" alt="Sewell Consulting"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -62,9 +64,9 @@
       <div class="masthead-bg"></div>
 
         <div class="masthead__overlay">
-            <h1>Your Roofing Advocate Before, During & After Damage</h1>
+            <h1 class="mast-heading">Your Roofing Advocate Before, During & After Damage</h1>
             <div class="masthead__overlay__btncontainer">
-            <a href="mission.html" class="site-btn">Our Mission</a>
+            <a href="mission.html" class="site-btn add-t-margin">Our Mission</a>
             <a href="process.html" class="site-btn">Our Process</a>
         </div>
            
@@ -88,7 +90,7 @@
             <div class="home-about__contact--content">80 Gander Lane<br>Rocky Point, NC<br>28457</div>
             <br>
 
-            <a href="contact.html" class="site-btn">Get in Touch</a>
+            <a href="contact.html" class="site-btn" id="home-contact-button">Get in Touch</a>
         </div>
     </section>
 
@@ -217,9 +219,32 @@
         start: "top bottom", 
         end: "bottom top",
         scrub: true,
-        markers: true
+      
       }
     });
+
+    gsap.from(".mast-heading", {
+      x: -200,
+      autoAlpha: 0,
+      duration: .8,
+      delay: .3,
+      scrollTrigger: {
+        trigger: '.masthead'
+      }
+    }
+    );
+</script>
+<script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header-logo").style.width = "75%";
+  } else {
+    document.getElementById("header-logo").style.width = "100%";
+  }
+} 
 </script>
 
 </body>
