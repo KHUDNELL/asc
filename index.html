@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!--<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">-->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- This site was designed and built from scratch without a pre-built template or theme by Ken Hudnell 2022 :) -->
@@ -97,9 +97,9 @@
     <section class="workmanship">
       <div class="workmanship-bg"></div>
         <div class="workmanship__container">
-        <h3>Roof Repairs | Insurance Claims | Warranties & Compensation</h3>
-        <h1>Superior Workmanship</h1>
-        <a href="testimonials.html" class="site-btn">Read Our Reviews</a> 
+        <h3 id="wkmn-h3">Roof Repairs | Insurance Claims | Warranties & Compensation</h3>
+        <h1 id="wkmn-h1">Superior Workmanship</h1>
+        <a href="testimonials.html" class="site-btn" id="wkmn-btn">Read Our Reviews</a> 
         </div>
     </section>
 
@@ -233,6 +233,46 @@
       }
     }
     );
+
+    let workmantl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.workmanship__container'
+      }
+    });
+
+    workmantl.from('#wkmn-h3', {
+      y: 50,
+      autoAlpha: 0
+    }).from("#wkmn-h1", {
+      y: 50, 
+      autoAlpha: 0
+    }).from("#wkmn-btn", {
+      scale: 0,
+      autoAlpha: 0
+    });
+
+    gsap.from('.home-about__content', {
+      autoAlpha: 0,
+      duration: 1.8,
+      scrollTrigger: {
+        trigger: '.home-about'
+      }
+    });
+
+    gsap.from('.home-about__contact', {
+      x: 500,
+      autoAlpha: 0,
+      duration: 1.5,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: '.home-about__contact'
+      }
+    })
+
+
+
+
+   
 </script>
 <script>
   // When the user scrolls down 50px from the top of the document, resize the header's font size

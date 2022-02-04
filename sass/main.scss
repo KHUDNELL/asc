@@ -20,6 +20,7 @@ $shadow-deep: 3px 3px 6px rgba(0,0,0,0.5);
   
   body {
     box-sizing: border-box;
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -30,7 +31,7 @@ $shadow-deep: 3px 3px 6px rgba(0,0,0,0.5);
    
   }
 p {
-   margin-bottom: 2rem;     
+   margin-bottom: 2rem;
 }
 
 .navbar {
@@ -43,7 +44,7 @@ p {
     justify-content: space-between;
     width: 100%;
 }
-.mast-heading {
+.mast-heading, .interior-main__images--upper, .interior-main__images--lower, #wkmn-h3, #wkmn-h1, #wkmn-btn, .home-about__content, .home-about__contact {
     visibility: hidden;
 }
 
@@ -611,7 +612,8 @@ footer {
         font-size: 1.4rem;
     }
     .workmanship-bg {
-        top: 50vh;
+        bottom: 0;
+        height: 90%;
     }
    
 
