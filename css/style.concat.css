@@ -581,6 +581,7 @@ textarea {
   box-sizing: inherit; }
 
 html {
+  overflow-x: hidden;
   font-size: 62.5%;
   scroll-behavior: smooth; }
 
@@ -601,7 +602,8 @@ p {
   padding-bottom: 0; }
 
 .navbar > .container-fluid {
-  align-items: flex-end; }
+  align-items: flex-end;
+  position: relative; }
 
 .navbar-nav {
   justify-content: space-between;
@@ -609,6 +611,26 @@ p {
 
 .mast-heading, .interior-main__images--upper, .interior-main__images--lower, #wkmn-h3, #wkmn-h1, #wkmn-btn, .home-about__content, .home-about__contact {
   visibility: hidden; }
+
+.header-number {
+  position: absolute;
+  top: 1rem;
+  font-size: 1.9rem;
+  right: 2rem; }
+  .header-number a {
+    text-decoration: none;
+    color: #707070;
+    transition: .4s; }
+    .header-number a:hover {
+      color: #ED1C24; }
+
+.dropdown-number {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #707070;
+  transition: .4s; }
+  .dropdown-number:hover {
+    color: #ED1C24; }
 
 .navbar-collapse {
   flex-grow: 0;
@@ -793,6 +815,7 @@ a.nav-link:hover {
     font-size: 2.5rem;
     color: #707070; }
   .home-about__contact {
+    overflow-x: hidden !important;
     padding: 0 2rem;
     flex-basis: 40%; }
     .home-about__contact--title {
@@ -909,6 +932,7 @@ a.nav-link:hover {
   .interior-main .add-t-margin {
     margin-bottom: 0rem; }
   .interior-main__images {
+    overflow-x: hidden;
     flex-basis: 33%;
     padding: 0 2rem; }
     .interior-main__images--upper {
@@ -1007,6 +1031,8 @@ footer {
 
 /* mobile menu breakpoint */
 @media screen and (max-width: 767px) {
+  .header-number {
+    display: none; }
   .masthead {
     min-height: 55vh; }
   .navbar > .container-fluid {

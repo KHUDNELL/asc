@@ -15,6 +15,7 @@ $shadow-deep: 3px 3px 6px rgba(0,0,0,0.5);
     
   
   html {
+      overflow-x: hidden;
     font-size: 62.5%;
     scroll-behavior: smooth; }
   
@@ -39,6 +40,7 @@ p {
 }
 .navbar>.container-fluid {
     align-items: flex-end;
+    position: relative;
 }
 .navbar-nav {
     justify-content: space-between;
@@ -47,7 +49,39 @@ p {
 .mast-heading, .interior-main__images--upper, .interior-main__images--lower, #wkmn-h3, #wkmn-h1, #wkmn-btn, .home-about__content, .home-about__contact {
     visibility: hidden;
 }
+.header-number {
+    position: absolute;
+     top: 1rem;
+     font-size: 1.9rem;
+     right: 2rem;
+   
+     
 
+     & a {
+         text-decoration: none;
+         color: $color-text-gray;
+         transition: .4s;
+
+         &:hover {
+             color: $color-asc-red;
+         }
+     }
+}
+
+.dropdown-number {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: $color-text-gray;
+    transition: .4s;
+
+  
+       
+
+        &:hover {
+            color: $color-asc-red;
+        }
+    
+}
 .navbar-collapse {
     flex-grow: 0;
     text-align: center;
@@ -166,6 +200,7 @@ a.nav-link:hover {
 
 
 .masthead {
+   
     min-height: 71vh;
     background: linear-gradient(
         rgba(0, 0, 0, 0.2), 
@@ -295,8 +330,10 @@ a.nav-link:hover {
     }
 
     &__contact {
+        overflow-x: hidden !important;
         padding: 0 2rem;
         flex-basis: 40%;
+       
         &--title {
             color: $color-asc-red;
             margin-bottom: 0;
@@ -483,6 +520,7 @@ a.nav-link:hover {
     
 
     &__images {
+        overflow-x: hidden;
         flex-basis: 33%;
         padding: 0 2rem;
 
@@ -661,6 +699,9 @@ footer {
 /* mobile menu breakpoint */
 
 @media screen and (max-width: 767px) {
+    .header-number {
+        display: none;
+    }
     .masthead {
         min-height: 55vh;
     }

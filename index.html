@@ -9,11 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">-->
+   
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- This site was designed and built from scratch without a pre-built template or theme by Ken Hudnell 2022 :) -->
+   
 
 
 
@@ -32,11 +31,16 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
+              <span class="header-number"><a href="tel:+19102331160"><i class="fas fa-phone-square-alt"></i>&nbsp; 910-233-1160</a></span>
               <a class="navbar-brand" href="#"><img src="images/Sewell_logo.png" id="header-logo" alt="Sewell Consulting"></a>
+           
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
+               
               </button>
+            
               <div class="collapse navbar-collapse" id="navbar-toggler">
+           
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="mission.html">MISSION</a>
@@ -50,6 +54,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">CONTACT</a>
                   </li>
+              
                 </ul>
               
               </div>
@@ -247,7 +252,7 @@
       y: 50, 
       autoAlpha: 0
     }).from("#wkmn-btn", {
-      scale: 0,
+     
       autoAlpha: 0
     });
 
@@ -260,10 +265,10 @@
     });
 
     gsap.from('.home-about__contact', {
-      x: 500,
+      x: 400,
       autoAlpha: 0,
       duration: 1.5,
-      ease: 'power2.inOut',
+      
       scrollTrigger: {
         trigger: '.home-about__contact'
       }
