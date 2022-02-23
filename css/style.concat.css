@@ -592,6 +592,21 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif; }
 
+.serving {
+  font-size: 4rem;
+  margin-top: 3rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #ED1C24;
+  font-family: 'Montserrat', sans-serif; }
+
+/* Utilities */
+ul.m-bottom-20 {
+  margin-bottom: 2rem; }
+
+.m-bottom-10 {
+  margin-bottom: 1rem; }
+
 .swiper {
   width: 95%; }
 
@@ -616,13 +631,20 @@ p {
   position: absolute;
   top: 1rem;
   font-size: 1.9rem;
-  right: 2rem; }
+  right: 3.5rem; }
   .header-number a {
     text-decoration: none;
-    color: #707070;
+    color: #ED1C24;
     transition: .4s; }
     .header-number a:hover {
-      color: #ED1C24; }
+      color: #707070; }
+
+.footer-phone {
+  color: white;
+  text-decoration: none;
+  transition: .4s; }
+  .footer-phone:hover {
+    color: #ED1C24; }
 
 .dropdown-number {
   font-size: 1.6rem;
@@ -743,7 +765,7 @@ a.nav-link:hover {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url("../images/bg-stock-photo-repairing-of-roof-by-cutting-felt-or-bitumen-shingles-during-waterproofing-works-688917724.jpg");
+    background-image: url("../images/bg-main_688917724.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
@@ -777,7 +799,7 @@ a.nav-link:hover {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url("../images/bg-stock-photo-repairing-of-roof-by-cutting-felt-or-bitumen-shingles-during-waterproofing-works-688917724.jpg");
+    background-image: url("../images/bg-main_688917724.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
@@ -815,7 +837,7 @@ a.nav-link:hover {
     font-size: 2.5rem;
     color: #707070; }
   .home-about__contact {
-    overflow-x: hidden !important;
+    overflow: hidden !important;
     padding: 0 2rem;
     flex-basis: 40%; }
     .home-about__contact--title {
@@ -826,7 +848,14 @@ a.nav-link:hover {
     .home-about__contact--content {
       color: #414141;
       font-size: 3rem;
-      font-weight: 600; }
+      font-weight: 600;
+      margin-bottom: 1rem; }
+      .home-about__contact--content a {
+        text-decoration: none;
+        color: #414141;
+        transition: color .4s; }
+        .home-about__contact--content a:hover {
+          color: #ED1C24; }
 
 .workmanship {
   min-height: 40vh;
@@ -845,7 +874,7 @@ a.nav-link:hover {
     width: 100%;
     height: 100%;
     z-index: -2;
-    background-image: url("../images/bg-stock-photo-house-garret-closeup-blur-sky-background-1273889977.jpg");
+    background-image: url("../images/bg-ss_1273889977.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
@@ -921,7 +950,9 @@ a.nav-link:hover {
       display: flex;
       margin-top: 4rem; }
     .interior-main__contact--phone {
-      width: 35%; }
+      width: 50%; }
+    .interior-main__contact--address {
+      width: 50%; }
   .interior-main__content {
     flex-basis: 66%;
     padding: 0 4rem;
@@ -986,7 +1017,8 @@ footer {
   .home-about__contact--title {
     font-size: 2.5rem; }
   #home-contact-button {
-    width: unset; }
+    width: unset;
+    margin: 0 0 10px 10px; }
   .home-about__contact--content {
     font-size: 2.5rem; }
   .workmanship__container h3 {
@@ -1007,7 +1039,7 @@ footer {
     font-size: 1.4rem; }
   .workmanship-bg {
     bottom: 0;
-    height: 90%; } }
+    height: 100%; } }
 
 /* tablet portrait */
 @media screen and (max-width: 1025px) {
@@ -1024,6 +1056,8 @@ footer {
     height: 33rem; }
   .navbar-brand img {
     max-width: 250px; }
+  .serving {
+    font-size: 3rem; }
   .interior-main__content {
     flex-basis: 60%; }
   .interior-main__images {
@@ -1031,6 +1065,8 @@ footer {
 
 /* mobile menu breakpoint */
 @media screen and (max-width: 767px) {
+  .interior-main__contact--flex {
+    flex-direction: column; }
   .header-number {
     display: none; }
   .masthead {
@@ -1072,6 +1108,9 @@ footer {
     bottom: 2rem; }
   .masthead__overlay h1, .home-about__content h1, .workmanship__container h1, .masthead-interior__overlay h1 {
     font-size: 3rem; }
+  .serving {
+    font-size: 2.7rem;
+    margin-bottom: 2rem; }
   .masthead__overlay__btncontainer {
     flex-direction: column; }
   a.site-btn {
@@ -1101,7 +1140,7 @@ footer {
     padding: 1rem 2rem;
     max-width: 225px; }
   .workmanship-bg {
-    top: 50vh; }
+    bottom: 0; }
   div.swiper-button-next, div.swiper-button-prev {
     display: none; }
   .testimonials .testimonial-container {
@@ -1122,3 +1161,7 @@ footer {
     text-align: center; }
   .footer__contact--title {
     display: none; } }
+
+@media screen and (max-width: 480px) {
+  .serving {
+    font-size: 2rem; } }

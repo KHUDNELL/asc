@@ -15,6 +15,21 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif; }
 
+.serving {
+  font-size: 4rem;
+  margin-top: 3rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #ED1C24;
+  font-family: 'Montserrat', sans-serif; }
+
+/* Utilities */
+ul.m-bottom-20 {
+  margin-bottom: 2rem; }
+
+.m-bottom-10 {
+  margin-bottom: 1rem; }
+
 .swiper {
   width: 95%; }
 
@@ -39,13 +54,13 @@ p {
   position: absolute;
   top: 1rem;
   font-size: 1.9rem;
-  right: 2rem; }
+  right: 3.5rem; }
   .header-number a {
     text-decoration: none;
-    color: #707070;
+    color: #ED1C24;
     transition: .4s; }
     .header-number a:hover {
-      color: #ED1C24; }
+      color: #707070; }
 
 .dropdown-number {
   font-size: 1.6rem;
@@ -238,7 +253,7 @@ justify-content: center;*/
     font-size: 2.5rem;
     color: #707070; }
   .home-about__contact {
-    overflow-x: hidden !important;
+    overflow: hidden !important;
     padding: 0 2rem;
     flex-basis: 40%; }
     .home-about__contact--title {
@@ -420,7 +435,8 @@ footer {
     font-size: 2.5rem; }
 
   #home-contact-button {
-    width: unset; }
+    width: unset;
+    margin: 0 0 10px 10px; }
 
   .home-about__contact--content {
     font-size: 2.5rem; }
@@ -451,7 +467,7 @@ footer {
 
   .workmanship-bg {
     bottom: 0;
-    height: 90%; } }
+    height: 100%; } }
 /* tablet portrait */
 @media screen and (max-width: 1025px) {
   a.site-btn {
@@ -469,6 +485,9 @@ footer {
 
   .navbar-brand img {
     max-width: 250px; }
+
+  .serving {
+    font-size: 3rem; }
 
   .interior-main__content {
     flex-basis: 60%; }
@@ -534,6 +553,10 @@ footer {
   .masthead__overlay h1, .home-about__content h1, .workmanship__container h1, .masthead-interior__overlay h1 {
     font-size: 3rem; }
 
+  .serving {
+    font-size: 2.7rem;
+    margin-bottom: 2rem; }
+
   .masthead__overlay__btncontainer {
     flex-direction: column; }
 
@@ -573,7 +596,7 @@ footer {
     max-width: 225px; }
 
   .workmanship-bg {
-    top: 50vh; }
+    bottom: 0; }
 
   div.swiper-button-next, div.swiper-button-prev {
     display: none; }
@@ -603,3 +626,6 @@ footer {
 
   .footer__contact--title {
     display: none; } }
+@media screen and (max-width: 480px) {
+  .serving {
+    font-size: 2rem; } }

@@ -27,6 +27,25 @@ $shadow-deep: 3px 3px 6px rgba(0,0,0,0.5);
     font-family: 'Montserrat', sans-serif;
 
 }
+.serving {
+    font-size: 4rem;
+    margin-top: 3rem;
+    font-weight: 500;
+    font-style: italic;
+    color: $color-asc-red;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Utilities */
+ul.m-bottom-20 {
+    margin-bottom: 2rem;
+
+}
+.m-bottom-10 {
+    margin-bottom: 1rem;
+}
+
+
 .swiper {
     width: 95%;
    
@@ -53,21 +72,32 @@ p {
     position: absolute;
      top: 1rem;
      font-size: 1.9rem;
-     right: 2rem;
+     right: 3.5rem;
    
      
 
      & a {
          text-decoration: none;
-         color: $color-text-gray;
+         color: $color-asc-red;
          transition: .4s;
-
+        
          &:hover {
-             color: $color-asc-red;
+             
+             color: $color-text-gray;
          }
      }
 }
 
+
+.footer-phone {
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+
+    &:hover {
+        color: $color-asc-red;
+    }
+}
 .dropdown-number {
     font-size: 1.6rem;
     text-decoration: none;
@@ -218,7 +248,7 @@ a.nav-link:hover {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url('../images/bg-stock-photo-repairing-of-roof-by-cutting-felt-or-bitumen-shingles-during-waterproofing-works-688917724.jpg');
+  background-image: url('../images/bg-main_688917724.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -269,7 +299,7 @@ a.nav-link:hover {
         width: 100%;
         height: 100%;
         z-index: -1;
-        background-image: url('../images/bg-stock-photo-repairing-of-roof-by-cutting-felt-or-bitumen-shingles-during-waterproofing-works-688917724.jpg');
+        background-image: url('../images/bg-main_688917724.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -330,7 +360,7 @@ a.nav-link:hover {
     }
 
     &__contact {
-        overflow-x: hidden !important;
+        overflow: hidden !important;
         padding: 0 2rem;
         flex-basis: 40%;
        
@@ -346,6 +376,18 @@ a.nav-link:hover {
             color: $color-text-gray-darker;
             font-size: 3rem;
             font-weight: 600;
+            margin-bottom: 1rem;
+          
+
+            & a {
+                text-decoration: none;
+                color: $color-text-gray-darker;
+                transition: color .4s;
+
+                &:hover {
+                    color: $color-asc-red;
+                }
+            }
         }
     }
 }
@@ -375,7 +417,7 @@ a.nav-link:hover {
   width: 100%;
   height: 100%;
   z-index: -2;
-  background-image: url('../images/bg-stock-photo-house-garret-closeup-blur-sky-background-1273889977.jpg');
+  background-image: url('../images/bg-ss_1273889977.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -500,7 +542,10 @@ a.nav-link:hover {
         }
 
         &--phone {
-            width: 35%;
+            width: 50%;
+        }
+        &--address {
+            width: 50%;
         }
     }
 
@@ -620,6 +665,7 @@ footer {
     }
     #home-contact-button {
         width: unset;
+        margin: 0 0 10px 10px;
     }
     .home-about__contact--content {
         font-size: 2.5rem;
@@ -651,7 +697,7 @@ footer {
     }
     .workmanship-bg {
         bottom: 0;
-        height: 90%;
+        height: 100%;
     }
    
 
@@ -685,6 +731,9 @@ footer {
         max-width: 250px;
         
     }
+    .serving {
+        font-size: 3rem;
+    }
     .interior-main__content {
         flex-basis: 60%;
     }
@@ -699,12 +748,17 @@ footer {
 /* mobile menu breakpoint */
 
 @media screen and (max-width: 767px) {
+    .interior-main__contact--flex {
+        flex-direction: column;
+    }
+
     .header-number {
         display: none;
     }
     .masthead {
         min-height: 55vh;
     }
+  
    
     .navbar>.container-fluid {
         align-items: center;
@@ -765,6 +819,12 @@ footer {
     .masthead__overlay h1, .home-about__content h1, .workmanship__container h1, .masthead-interior__overlay h1 {
         font-size: 3rem;
     }
+
+    .serving {
+        font-size: 2.7rem;
+        margin-bottom: 2rem;
+    }
+
     .masthead__overlay__btncontainer {
         flex-direction: column;
     }
@@ -812,7 +872,7 @@ footer {
         max-width: 225px;
     }
    .workmanship-bg {
-       top: 50vh;
+    bottom: 0;
        
    }
    div.swiper-button-next, div.swiper-button-prev {
@@ -856,7 +916,10 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    
+    .serving {
+        font-size: 2rem;
+      
+    }
     
 }
 
